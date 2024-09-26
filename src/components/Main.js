@@ -1,5 +1,5 @@
 import React from "react";
-import ListBox from "./ListBox.js";
+import ListBox from "./Box.js";
 import WatchedBox from "./WatchedBox.js";
 
 const Main = ({ children }) => {
