@@ -121,6 +121,9 @@ body {
   justify-self: end;
   font-size: 1.8rem;
 }
+.num-results span {
+  color: var(--color-red);
+}
 
 .btn-toggle {
   position: absolute;
