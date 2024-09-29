@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { useKey } from "../helpers/useKey.js";
 import ErrorMessage from "./ErrorMessage.js";
 import Loader from "./Loader.js";
 import StarRating from "./StarRating.js";
@@ -95,22 +96,7 @@ const MovieDetails = ({ selectedId, onCloseMovie, onAddWatched, watched }) => {
     [title]
   );
 
-  useEffect(
-    function () {
-      function callback(e) {
-        if (e.code === "Escape") {
-          onCloseMovie();
-        }
-      }
-
-      document.addEventListener("keydown", callback);
-
-      return function () {
-        document.removeEventListener("keydown", callback);
-      };
-    },
-    [onCloseMovie]
-  );
+  useKey("Escape", onCloseMovie);
 
   return (
     <div className="details">
