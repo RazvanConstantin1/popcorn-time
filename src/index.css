@@ -202,7 +202,7 @@ body {
   aspect-ratio: 1;
   border-radius: 50%;
   border: none;
-  background-color: var(--color-red);
+  background-color: var(--color-primary-light);
   color: var(--color-background-900);
   font-size: 0.9rem;
   font-weight: bold;
@@ -298,7 +298,7 @@ body {
 }
 
 .btn-add {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-light);
   color: var(--color-text);
   border: none;
   border-radius: 10rem;
@@ -310,7 +310,7 @@ body {
 }
 
 .btn-add:hover {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-red);
 }
 
 .seconds {
