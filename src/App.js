@@ -7,7 +7,7 @@ import Box from "./components/Box.js";
 import WatchedSummary from "./components/WatchedSummary.js";
 import WatchedMovieList from "./components/WatchedMovieList.js";
 import MovieList from "./components/MovieList.js";
-import { useEffect } from "react";
+
 import Loader from "./components/Loader.js";
 import ErrorMessage from "./components/ErrorMessage.js";
 import MovieDetails from "./components/MovieDetails.js";
